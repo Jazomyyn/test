@@ -1,0 +1,135 @@
+.txt-gray {
+  color: #8F9BB9 !important;
+}
+.txt-gray-dark {
+  color: #af9898 !important;
+}
+.txt-beige {
+  color: #F4F4F4 !important;
+}
+.txt-blue {
+  color: #0FA5E8 !important;
+}
+.txt-green {
+  background-color: #00D8BF !important;
+}
+.txt-blue-dark {
+  color: #2B4981 !important;
+}
+.bg-body {
+  background-color: #F4F4F4 !important;
+}
+.bg-blue-dark {
+  background-color: #2B4981 !important;
+}
+.bg-green {
+  background-color: #00D8BF !important;
+}
+/***** Font Weights *****/
+.fw-100 {
+  font-weight: 100 !important;
+}
+.fw-200 {
+  font-weight: 200 !important;
+}
+.fw-300 {
+  font-weight: 300 !important;
+}
+.fw-400 {
+  font-weight: 400 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
+.fw-700 {
+  font-weight: 700 !important;
+}
+.fw-800 {
+  font-weight: 800 !important;
+}
+.fw-900 {
+  font-weight: 900 !important;
+}
+/***** Font Sizes *****/
+.fz-xs {
+  font-size: 0.6rem !important;
+}
+.fz-sm {
+  font-size: 0.8rem !important;
+}
+.fz-md {
+  font-size: 1rem !important;
+}
+.fz-lg {
+  font-size: 1.2rem !important;
+}
+.fz-xl {
+  font-size: 1.4rem !important;
+}
+.fz-xxl {
+  font-size: 1.8rem !important;
+}
+.st-side {
+  background: transparent linear-gradient(270deg, #ccccc3 0%, #dbe7de 100%) 0% 0% no-repeat padding-box;
+  border-top-right-radius: 30px!important;
+  border-bottom-right-radius: 30px!important;
+}
+.footer-position {
+  position: absolute!important;
+  bottom: 0!important;
+}
+* {
+  font-family: 'Didact Gothic', sans-serif;
+}
+.image-banner {
+  background-image: url("/img/general/banner.jpg") !important;
+  background-size: cover !important;
+  height: 60vh !important;
+}
+.txt-header {
+  font-family: 'Pacifico', cursive !important;
+}
+.w-70 {
+  width: 70vh!important;
+}
+.bg-transparent {
+  -webkit-backdrop-filter: blur(0);
+          backdrop-filter: blur(0);
+  box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+  color: seashell;
+}
+.h-500 {
+  height: 500px!important;
+}
+.h-455 {
+  height: 455px!important;
+}
+.h100 {
+  height: 100%!important;
+}
+.img-grid-category {
+  height: 100px;
+  border-radius: 50px;
+  max-width: 100px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.9);
+}
+
