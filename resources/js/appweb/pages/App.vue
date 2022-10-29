@@ -5,7 +5,7 @@
             <transition>
                 <router-view></router-view>
             </transition>
-            <Footer></Footer>
+            <Footer class="mt-10"></Footer>
         </div>
     </v-app>
 </template>

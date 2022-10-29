@@ -5679,6 +5679,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -5724,6 +5739,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -6035,6 +6060,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
 //
 //
 //
@@ -7875,7 +7901,7 @@ __webpack_require__.r(__webpack_exports__);
         label: "Fecha de reservación",
         name: "reservation_date",
         filter: {
-          type: "simple"
+          type: "date"
         }
       }, {
         label: "",
@@ -13454,7 +13480,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.v-card--reveal[data-v-2f18a18e] {\r\n    bottom: 0;\r\n    opacity: 1 !important;\r\n    position: absolute;\r\n    width: 100%;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.v-card--reveal[data-v-2f18a18e] {\r\n    bottom: 0;\r\n    opacity: 1 !important;\r\n    position: absolute;\r\n    width: 100% !important;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -32598,7 +32624,7 @@ var render = function () {
             "v-slide-group",
             {
               staticClass: "pa-4",
-              attrs: { "center-active": "", "show-arrows": "" },
+              attrs: { "center-active": "" },
               model: {
                 value: _vm.model,
                 callback: function ($$v) {
@@ -32621,13 +32647,11 @@ var render = function () {
                           _c(
                             "v-card",
                             {
-                              staticClass: "ma-4",
+                              staticClass: "ma-4 w-min scroll-card",
                               attrs: {
                                 color: active
                                   ? "cyan lighten-2"
                                   : "grey lighten-2",
-                                height: "500",
-                                width: "400",
                               },
                               on: { click: toggle },
                             },
@@ -32746,14 +32770,14 @@ var render = function () {
                                           _c(
                                             "v-col",
                                             {
-                                              staticClass: "text-left",
-                                              attrs: { cols: "6" },
+                                              staticClass:
+                                                "text-center text-md-left",
+                                              attrs: { cols: "12", md: "6" },
                                             },
                                             [
                                               _c(
                                                 "v-btn",
                                                 {
-                                                  staticClass: "ms-5",
                                                   attrs: {
                                                     dark: "",
                                                     color: "purple",
@@ -32777,8 +32801,9 @@ var render = function () {
                                           _c(
                                             "v-col",
                                             {
-                                              staticClass: "text-right",
-                                              attrs: { cols: "6" },
+                                              staticClass:
+                                                "text-center text-md-right",
+                                              attrs: { cols: "12", md: "6" },
                                             },
                                             [
                                               _c("form-reservation", {
@@ -32802,12 +32827,15 @@ var render = function () {
                                             "v-card",
                                             {
                                               staticClass:
-                                                "transition-fast-in-fast-out v-card--reveal",
+                                                "transition-fast-in-fast-out v-card--reveal w-min scroll-card",
                                             },
                                             [
                                               _c(
                                                 "v-card-text",
-                                                { staticClass: "pb-0 h-455" },
+                                                {
+                                                  staticClass:
+                                                    "pb-0 h-455 h-min",
+                                                },
                                                 [
                                                   _c(
                                                     "p",
@@ -33033,8 +33061,11 @@ var render = function () {
                                                         "v-col",
                                                         {
                                                           staticClass:
-                                                            "text-left",
-                                                          attrs: { cols: "6" },
+                                                            "text-center text-md-left",
+                                                          attrs: {
+                                                            cols: "12",
+                                                            md: "6",
+                                                          },
                                                         },
                                                         [
                                                           _c(
@@ -33067,8 +33098,11 @@ var render = function () {
                                                         "v-col",
                                                         {
                                                           staticClass:
-                                                            "text-right",
-                                                          attrs: { cols: "6" },
+                                                            "text-center text-md-right",
+                                                          attrs: {
+                                                            cols: "12",
+                                                            md: "6",
+                                                          },
                                                         },
                                                         [
                                                           _c(
@@ -33135,7 +33169,7 @@ var render = function () {
             "v-slide-group",
             {
               staticClass: "pa-4",
-              attrs: { "center-active": "", "show-arrows": "" },
+              attrs: { "center-active": "" },
               model: {
                 value: _vm.model,
                 callback: function ($$v) {
@@ -33166,13 +33200,11 @@ var render = function () {
                           _c(
                             "v-card",
                             {
-                              staticClass: "ma-4",
+                              staticClass: "ma-4 w-min scroll-card",
                               attrs: {
                                 color: active
                                   ? "cyan lighten-2"
                                   : "grey lighten-2",
-                                height: "500",
-                                width: "400",
                               },
                               on: { click: toggle },
                             },
@@ -33291,14 +33323,14 @@ var render = function () {
                                           _c(
                                             "v-col",
                                             {
-                                              staticClass: "text-left",
-                                              attrs: { cols: "6" },
+                                              staticClass:
+                                                "text-center text-md-left",
+                                              attrs: { cols: "12", md: "6" },
                                             },
                                             [
                                               _c(
                                                 "v-btn",
                                                 {
-                                                  staticClass: "ms-5",
                                                   attrs: {
                                                     dark: "",
                                                     color: "purple",
@@ -33322,8 +33354,9 @@ var render = function () {
                                           _c(
                                             "v-col",
                                             {
-                                              staticClass: "text-right",
-                                              attrs: { cols: "6" },
+                                              staticClass:
+                                                "text-center text-md-right",
+                                              attrs: { cols: "12", md: "6" },
                                             },
                                             [
                                               _c("form-reservation", {
@@ -33347,15 +33380,15 @@ var render = function () {
                                             "v-card",
                                             {
                                               staticClass:
-                                                "transition-fast-in-fast-out v-card--reveal",
-                                              staticStyle: {
-                                                height: "100% !important",
-                                              },
+                                                "transition-fast-in-fast-out v-card--reveal w-min scroll-card",
                                             },
                                             [
                                               _c(
                                                 "v-card-text",
-                                                { staticClass: "pb-0 h-455" },
+                                                {
+                                                  staticClass:
+                                                    "pb-0 h-455 h-min",
+                                                },
                                                 [
                                                   _c(
                                                     "p",
@@ -33581,8 +33614,11 @@ var render = function () {
                                                         "v-col",
                                                         {
                                                           staticClass:
-                                                            "text-left",
-                                                          attrs: { cols: "6" },
+                                                            "text-center text-md-left",
+                                                          attrs: {
+                                                            cols: "12",
+                                                            md: "6",
+                                                          },
                                                         },
                                                         [
                                                           _c(
@@ -33615,8 +33651,11 @@ var render = function () {
                                                         "v-col",
                                                         {
                                                           staticClass:
-                                                            "text-right",
-                                                          attrs: { cols: "6" },
+                                                            "text-center text-md-right",
+                                                          attrs: {
+                                                            cols: "12",
+                                                            md: "6",
+                                                          },
                                                         },
                                                         [
                                                           _c(
@@ -33708,9 +33747,9 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c(
     "v-container",
-    { attrs: { fluid: "" } },
+    { staticClass: "mb-16", attrs: { fluid: "" } },
     [
-      _c("h2", { staticClass: "text-center txt-blue-dark my-5 fw-900" }, [
+      _c("h2", { staticClass: "text-center txt-blue-dark mt-5 fw-900" }, [
         _vm._v("\n        " + _vm._s(_vm.title) + "\n    "),
       ]),
       _vm._v(" "),
@@ -33723,7 +33762,7 @@ var render = function () {
                 "v-slide-group",
                 {
                   staticClass: "pa-4",
-                  attrs: { "center-active": "", "show-arrows": "" },
+                  attrs: { "center-active": "" },
                   model: {
                     value: _vm.model,
                     callback: function ($$v) {
@@ -33746,13 +33785,11 @@ var render = function () {
                               _c(
                                 "v-card",
                                 {
-                                  staticClass: "ma-4",
+                                  staticClass: "ma-4 w-min scroll-card",
                                   attrs: {
                                     color: active
                                       ? "cyan lighten-2"
                                       : "grey lighten-2",
-                                    height: "500",
-                                    width: "400",
                                   },
                                   on: { click: toggle },
                                 },
@@ -33890,14 +33927,17 @@ var render = function () {
                                               _c(
                                                 "v-col",
                                                 {
-                                                  staticClass: "text-left",
-                                                  attrs: { cols: "6" },
+                                                  staticClass:
+                                                    "text-center text-md-left",
+                                                  attrs: {
+                                                    cols: "12",
+                                                    md: "6",
+                                                  },
                                                 },
                                                 [
                                                   _c(
                                                     "v-btn",
                                                     {
-                                                      staticClass: "ms-5",
                                                       attrs: {
                                                         dark: "",
                                                         color: "purple",
@@ -33923,17 +33963,23 @@ var render = function () {
                                               _c(
                                                 "v-col",
                                                 {
-                                                  staticClass: "text-right",
-                                                  attrs: { cols: "6" },
+                                                  staticClass:
+                                                    "text-center text-md-right",
+                                                  attrs: {
+                                                    cols: "12",
+                                                    md: "6",
+                                                  },
                                                 },
                                                 [
                                                   _c(
                                                     "v-btn",
                                                     {
-                                                      staticClass: "mr-5",
+                                                      staticClass:
+                                                        "mr-0 mr-md-5 mt-4 mt-md-0",
                                                       attrs: {
                                                         elevation: "3",
                                                         dark: "",
+                                                        block: "",
                                                         color: "indigo",
                                                       },
                                                       on: {
@@ -33971,13 +34017,14 @@ var render = function () {
                                                 "v-card",
                                                 {
                                                   staticClass:
-                                                    "transition-fast-in-fast-out v-card--reveal",
+                                                    "transition-fast-in-fast-out v-card--reveal w-min scroll-card",
                                                 },
                                                 [
                                                   _c(
                                                     "v-card-text",
                                                     {
-                                                      staticClass: "pb-0 h-455",
+                                                      staticClass:
+                                                        "pb-0 h-455 w-100 h-min",
                                                     },
                                                     [
                                                       _c(
@@ -34242,9 +34289,10 @@ var render = function () {
                                                             "v-col",
                                                             {
                                                               staticClass:
-                                                                "text-left",
+                                                                "text-center text-md-left",
                                                               attrs: {
-                                                                cols: "6",
+                                                                cols: "12",
+                                                                md: "6",
                                                               },
                                                             },
                                                             [
@@ -34279,9 +34327,10 @@ var render = function () {
                                                             "v-col",
                                                             {
                                                               staticClass:
-                                                                "text-right",
+                                                                "text-center text-md-right",
                                                               attrs: {
-                                                                cols: "6",
+                                                                cols: "12",
+                                                                md: "6",
                                                               },
                                                             },
                                                             [
@@ -34289,11 +34338,12 @@ var render = function () {
                                                                 "v-btn",
                                                                 {
                                                                   staticClass:
-                                                                    "mr-5",
+                                                                    "mr-0 mr-md-5 mt-4 mt-md-0",
                                                                   attrs: {
                                                                     elevation:
                                                                       "3",
                                                                     dark: "",
+                                                                    block: "",
                                                                     color:
                                                                       "indigo",
                                                                   },
@@ -34413,8 +34463,13 @@ var render = function () {
                 _vm._g(
                   _vm._b(
                     {
-                      staticClass: "mr-5",
-                      attrs: { elevation: "3", dark: "", color: "indigo" },
+                      staticClass: "mr-0 mr-md-5 mt-4 mt-md-0",
+                      attrs: {
+                        elevation: "3",
+                        dark: "",
+                        block: "",
+                        color: "indigo",
+                      },
                     },
                     "v-btn",
                     attrs,
@@ -35427,7 +35482,7 @@ var render = function () {
         _vm._v(" "),
         _c("transition", [_c("router-view")], 1),
         _vm._v(" "),
-        _c("Footer"),
+        _c("Footer", { staticClass: "mt-10" }),
       ],
       1
     ),
@@ -35570,7 +35625,7 @@ var render = function () {
       _vm._v(" "),
       _c(
         "v-container",
-        { staticClass: "w-50" },
+        { staticClass: "w-50 cat" },
         [
           _c("table-component", {
             attrs: {
@@ -35640,7 +35695,7 @@ var render = function () {
                   "v-container",
                   {
                     staticClass:
-                      "border border-warning rounded ms-5 w-70 mt-5 bg-transparent",
+                      "border border-warning rounded ms-5 w-70 mt-5 bg-transparent w-sm-16",
                   },
                   [
                     _c(
@@ -35663,11 +35718,11 @@ var render = function () {
                               "v-menu",
                               {
                                 ref: "menu",
+                                staticClass: "ms-small-n2",
                                 attrs: {
                                   "close-on-content-click": false,
                                   "return-value": _vm.date,
-                                  transition: "scale-transition",
-                                  "offset-y": "",
+                                  transition: "fab-transition",
                                   "min-width": "auto",
                                 },
                                 on: {

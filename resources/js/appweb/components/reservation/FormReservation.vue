@@ -2,9 +2,10 @@
     <v-dialog v-model="dialog" width="500" persistent>
         <template v-slot:activator="{ on, attrs }">
             <v-btn
-                class="mr-5"
+                class="mr-0 mr-md-5 mt-4 mt-md-0"
                 elevation="3"
                 dark
+                block
                 v-on="on"
                 color="indigo"
                 v-bind="attrs"

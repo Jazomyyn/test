@@ -10,7 +10,7 @@
             <div>
                 <v-form ref="form" lazy-validation>
                     <v-container
-                        class="border border-warning rounded ms-5 w-70 mt-5 bg-transparent"
+                        class="border border-warning rounded ms-5 w-70 mt-5 bg-transparent w-sm-16"
                     >
                         <v-row no-gutters>
                             <v-col cols="12">
@@ -25,9 +25,9 @@
                                     v-model="menu"
                                     :close-on-content-click="false"
                                     :return-value.sync="date"
-                                    transition="scale-transition"
-                                    offset-y
+                                    transition="fab-transition"
                                     min-width="auto"
+                                    class="ms-small-n2"
                                 >
                                     <template v-slot:activator="{ on, attrs }">
                                         <v-text-field

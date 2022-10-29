@@ -3,7 +3,7 @@
         <h1 class="text-center txt-blue-dark txt-header my-5 fw-900">
             Categorías
         </h1>
-        <v-container class="w-50">
+        <v-container class="w-50 cat">
             <table-component
                 :rows="rows"
                 :total_rows="total_rows"

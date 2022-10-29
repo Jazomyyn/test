@@ -52,7 +52,7 @@ export default {
                 {
                     label: "Fecha de reservación",
                     name: "reservation_date",
-                    filter: { type: "simple" },
+                    filter: { type: "date" },
                 },
                 {
                     label: "",

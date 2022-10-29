@@ -1,16 +1,11 @@
 <template>
-    <v-container fluid>
-        <h2 class="text-center txt-blue-dark my-5 fw-900">
+    <v-container fluid class="mb-16">
+        <h2 class="text-center txt-blue-dark mt-5 fw-900">
             {{ title }}
         </h2>
 
         <v-sheet class="mx-auto" elevation="8" v-if="activities !== null">
-            <v-slide-group
-                v-model="model"
-                class="pa-4"
-                center-active
-                show-arrows
-            >
+            <v-slide-group v-model="model" class="pa-4" center-active>
                 <v-slide-item
                     v-for="activity in activities"
                     :key="activity.activity.id"
@@ -18,9 +13,7 @@
                 >
                     <v-card
                         :color="active ? 'cyan lighten-2' : 'grey lighten-2'"
-                        class="ma-4"
-                        height="500"
-                        width="400"
+                        class="ma-4 w-min scroll-card"
                         @click="toggle"
                     >
                         <v-row
@@ -67,9 +60,12 @@
                             </v-card-text>
                             <v-card-actions>
                                 <v-row no-gutters>
-                                    <v-col cols="6" class="text-left">
+                                    <v-col
+                                        cols="12"
+                                        md="6"
+                                        class="text-center text-md-left"
+                                    >
                                         <v-btn
-                                            class="ms-5"
                                             dark
                                             color="purple"
                                             @click="reveal = true"
@@ -77,11 +73,16 @@
                                             Detalles
                                         </v-btn>
                                     </v-col>
-                                    <v-col cols="6" class="text-right">
+                                    <v-col
+                                        cols="12"
+                                        md="6"
+                                        class="text-center text-md-right"
+                                    >
                                         <v-btn
-                                            class="mr-5"
+                                            class="mr-0 mr-md-5 mt-4 mt-md-0"
                                             elevation="3"
                                             dark
+                                            block
                                             color="indigo"
                                             @click="
                                                 submit(
@@ -99,9 +100,9 @@
                             <v-expand-transition>
                                 <v-card
                                     v-if="reveal"
-                                    class="transition-fast-in-fast-out v-card--reveal"
+                                    class="transition-fast-in-fast-out v-card--reveal w-min scroll-card"
                                 >
-                                    <v-card-text class="pb-0 h-455">
+                                    <v-card-text class="pb-0 h-455 w-100 h-min">
                                         <p class="fz-lg fw-600">Detalles</p>
                                         <p class="fz-md">
                                             <span class="txt-blue-dark fw-800"
@@ -174,7 +175,11 @@
                                     </v-card-text>
                                     <v-card-actions class="pt-0">
                                         <v-row no-gutters>
-                                            <v-col cols="6" class="text-left">
+                                            <v-col
+                                                cols="12"
+                                                md="6"
+                                                class="text-center text-md-left"
+                                            >
                                                 <v-btn
                                                     text
                                                     color="purple"
@@ -183,11 +188,16 @@
                                                     Regresar
                                                 </v-btn>
                                             </v-col>
-                                            <v-col cols="6" class="text-right">
+                                            <v-col
+                                                cols="12"
+                                                md="6"
+                                                class="text-center text-md-right"
+                                            >
                                                 <v-btn
-                                                    class="mr-5"
+                                                    class="mr-0 mr-md-5 mt-4 mt-md-0"
                                                     elevation="3"
                                                     dark
+                                                    block
                                                     color="indigo"
                                                     @click="
                                                         submit(

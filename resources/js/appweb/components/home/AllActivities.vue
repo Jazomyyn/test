@@ -9,12 +9,7 @@
             elevation="8"
             v-show="activities !== null && !withCategory"
         >
-            <v-slide-group
-                v-model="model"
-                class="pa-4"
-                center-active
-                show-arrows
-            >
+            <v-slide-group v-model="model" class="pa-4" center-active>
                 <v-slide-item
                     v-for="activity in activities"
                     :key="activity.id"
@@ -22,9 +17,7 @@
                 >
                     <v-card
                         :color="active ? 'cyan lighten-2' : 'grey lighten-2'"
-                        class="ma-4"
-                        height="500"
-                        width="400"
+                        class="ma-4 w-min scroll-card"
                         @click="toggle"
                     >
                         <v-row
@@ -69,9 +62,12 @@
                             </v-card-text>
                             <v-card-actions>
                                 <v-row no-gutters>
-                                    <v-col cols="6" class="text-left">
+                                    <v-col
+                                        cols="12"
+                                        md="6"
+                                        class="text-center text-md-left"
+                                    >
                                         <v-btn
-                                            class="ms-5"
                                             dark
                                             color="purple"
                                             @click="reveal = true"
@@ -79,7 +75,11 @@
                                             Detalles
                                         </v-btn>
                                     </v-col>
-                                    <v-col cols="6" class="text-right">
+                                    <v-col
+                                        cols="12"
+                                        md="6"
+                                        class="text-center text-md-right"
+                                    >
                                         <form-reservation
                                             :data="activity"
                                         ></form-reservation>
@@ -90,9 +90,9 @@
                             <v-expand-transition>
                                 <v-card
                                     v-if="reveal"
-                                    class="transition-fast-in-fast-out v-card--reveal"
+                                    class="transition-fast-in-fast-out v-card--reveal w-min scroll-card"
                                 >
-                                    <v-card-text class="pb-0 h-455">
+                                    <v-card-text class="pb-0 h-455 h-min">
                                         <p class="fz-lg fw-600">Detalles</p>
                                         <p class="fz-md">
                                             <span class="txt-blue-dark fw-800"
@@ -155,7 +155,11 @@
                                     </v-card-text>
                                     <v-card-actions class="pt-0">
                                         <v-row no-gutters>
-                                            <v-col cols="6" class="text-left">
+                                            <v-col
+                                                cols="12"
+                                                md="6"
+                                                class="text-center text-md-left"
+                                            >
                                                 <v-btn
                                                     text
                                                     color="purple"
@@ -164,7 +168,11 @@
                                                     Regresar
                                                 </v-btn>
                                             </v-col>
-                                            <v-col cols="6" class="text-right">
+                                            <v-col
+                                                cols="12"
+                                                md="6"
+                                                class="text-center text-md-right"
+                                            >
                                                 <form-reservation
                                                     :data="activity"
                                                 ></form-reservation>
@@ -183,12 +191,7 @@
             elevation="8"
             v-show="activities !== null && withCategory"
         >
-            <v-slide-group
-                v-model="model"
-                class="pa-4"
-                center-active
-                show-arrows
-            >
+            <v-slide-group v-model="model" class="pa-4" center-active>
                 <v-slide-item
                     v-for="activity in activities"
                     :key="activity.id"
@@ -197,9 +200,7 @@
                 >
                     <v-card
                         :color="active ? 'cyan lighten-2' : 'grey lighten-2'"
-                        class="ma-4"
-                        height="500"
-                        width="400"
+                        class="ma-4 w-min scroll-card"
                         @click="toggle"
                     >
                         <v-row
@@ -244,9 +245,12 @@
                             </v-card-text>
                             <v-card-actions>
                                 <v-row no-gutters>
-                                    <v-col cols="6" class="text-left">
+                                    <v-col
+                                        cols="12"
+                                        md="6"
+                                        class="text-center text-md-left"
+                                    >
                                         <v-btn
-                                            class="ms-5"
                                             dark
                                             color="purple"
                                             @click="reveal = true"
@@ -254,7 +258,11 @@
                                             Detalles
                                         </v-btn>
                                     </v-col>
-                                    <v-col cols="6" class="text-right">
+                                    <v-col
+                                        cols="12"
+                                        md="6"
+                                        class="text-center text-md-right"
+                                    >
                                         <form-reservation
                                             :data="activity"
                                         ></form-reservation>
@@ -265,10 +273,9 @@
                             <v-expand-transition>
                                 <v-card
                                     v-if="reveal"
-                                    class="transition-fast-in-fast-out v-card--reveal"
-                                    style="height: 100% !important"
+                                    class="transition-fast-in-fast-out v-card--reveal w-min scroll-card"
                                 >
-                                    <v-card-text class="pb-0 h-455">
+                                    <v-card-text class="pb-0 h-455 h-min">
                                         <p class="fz-lg fw-600">Detalles</p>
                                         <p class="fz-md">
                                             <span class="txt-blue-dark fw-800"
@@ -331,7 +338,11 @@
                                     </v-card-text>
                                     <v-card-actions class="pt-0">
                                         <v-row no-gutters>
-                                            <v-col cols="6" class="text-left">
+                                            <v-col
+                                                cols="12"
+                                                md="6"
+                                                class="text-center text-md-left"
+                                            >
                                                 <v-btn
                                                     text
                                                     color="purple"
@@ -340,7 +351,11 @@
                                                     Regresar
                                                 </v-btn>
                                             </v-col>
-                                            <v-col cols="6" class="text-right">
+                                            <v-col
+                                                cols="12"
+                                                md="6"
+                                                class="text-center text-md-right"
+                                            >
                                                 <form-reservation
                                                     :data="activity"
                                                 ></form-reservation>
@@ -399,6 +414,6 @@ export default {
     bottom: 0;
     opacity: 1 !important;
     position: absolute;
-    width: 100%;
+    width: 100% !important;
 }
 </style>
